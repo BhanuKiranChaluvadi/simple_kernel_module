@@ -2,6 +2,10 @@
 #include <linux/module.h>
 #include <linux/sched.h>
 
+MODULE_LICENSE("GPL");
+MODULE_AUTHOR("Bhanu Kiran Chaluvadi");
+MODULE_DESCRIPTION("Simple test kernel modules");
+
 int my_init_module(void) {
     printk("in init module \n");
     return 0;
