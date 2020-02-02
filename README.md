@@ -30,3 +30,6 @@ dmesg | tail
 
 cat /var/log/kern.log | tail
 
+### clean
+make -C /lib/modules/$(uname -r)/build M=$PWD clean
+
